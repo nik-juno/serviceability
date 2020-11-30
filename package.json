@@ -13,5 +13,8 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "aws-amplify": "^3.3.10"
   }
 }
