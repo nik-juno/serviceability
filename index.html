@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body style="margin: 0px; overflow: auto;" id="themed" cz-shortcut-listen="true">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="root">
+    <div id="calcForm" class="form">
+      <form onsubmit="return false">
+        <div><label for="employmentIncome" class="Label-module_label-label__1A7fI">Monthly Employment Income</label></div>
+        <div><input id="employmentIncome" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your monthly employment income" maxlength="10" placeholder="$" value=""></div>
+
+        <div><label for="additionalIncome" class="Label-module_label-label__1A7fI">Monthly Additional Income</label></div>
+        <div><input id="additionalIncome" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your monthly additional income" maxlength="10" placeholder="$" value=""></div>
+
+        <div><label for="rentalIncome" class="Label-module_label-label__1A7fI">Monthly Rental income</label></div>
+        <div><input id="rentalIncome" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your monthly rental income" maxlength="10" placeholder="$" value=""></div>
+
+        <br/>
+
+        <div><label for="monthlyExpenses" class="Label-module_label-label__1A7fI">Monthly Expenses</label></div>
+        <div><input id="monthlyExpenses" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your monthly expenses" maxlength="10" placeholder="$" value=""></div>
+
+        <div><label for="otherDebt" class="Label-module_label-label__1A7fI">Other Monthly Debt</label></div>
+        <div><input id="otherDebt" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your other monthly debt" maxlength="10" placeholder="$" value=""></div>
+
+        <div><label for="homeLoan" class="Label-module_label-label__1A7fI">Monthly Home Loan Repayments</label></div>
+        <div><input id="homeLoan" type="number" step=".01" pattern="^\d*(\.\d{0,2})?$" required title="Please capture your monthly home loan repayments" maxlength="10" placeholder="$" value=""></div>
+
+        <br/>
+
+        <div class="submit">
+          <input type="submit" name="submit" value="Submit" id="calculate">
+        </div>
+
+      </form>
+
+      <br/>
+      <p id="remainingAmount"></p>
+    </div>
+  </div>
+<body>
+
+  <script src="js/vendor/jquery-3.5.1.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
