@@ -13,7 +13,7 @@ let calculate = () => {
     url: url,
     crossDomain: true,
     success: function(data) {
-      $('#remainingAmount').text('Remaining amount based on homeloan rate of 2.29%: ' + data.remainingAmount);
+      $('#remainingAmount').text('Remaining amount based on home loan rate of 2.29% = $' + data.remainingAmount);
     }
   });
 
